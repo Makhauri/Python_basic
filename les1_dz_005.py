@@ -7,7 +7,8 @@ if int(profit) < int(cost):
     print('Ваше предприятие убыточно')
 else:
     print('Ваше предприятие прибыльно')
-    print(f'Соотношение прибыли к убыткам = 1 к {int(profit)/int(cost)}')
+    print(f'Соотношение прибыли к убыткам = 1 к {round(int(profit)/int(cost),1)}')
 
     staff = input('Введите число сотрудников: ')
     print(f'Прибыль на каждого сотрудника составляет: {int(profit)//int(staff)} рублей {int(profit)%int(staff)} копеек')
+
